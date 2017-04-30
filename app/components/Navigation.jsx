@@ -20,7 +20,7 @@ var Navigation = () => {
       <div className="top-bar-right">
         <ul className="menu">
           <li className="menu-text">
-            Created by <a href="http://jordy.help" target="_blank">Jordy Webb</a>
+            Created by <a href="https://github.com/webbjordy" target="_blank">Jordy Webb</a>
           </li>
         </ul>
       </div>
