@@ -78,6 +78,16 @@ describe('filterTodos', () => {
     expect(filteredTodos[0].completed).toBe(false);
   });
 
+  it('should filter todos by seachText', () => {
+    var filteredTodos = TodoAPI.filterTodos(todos, true, '');
+    expect(filteredTodos.length).toBe(3);
+  });
+
+  it('should return all todos if searchText is empty', () => {
+    var filteredTodos = TodoAPI.filterTodos(todos, true, '');
+    expect(filteredTodos.length).toBe(3);
+  });
+
 });
 
 });
