@@ -10,4 +10,15 @@ describe('Actions', () => {
     var res = actions.setSearchText(action.searchText);
     expect(res).toEqual(action);
   });
+
+  it('should generate addTodo action', () => {
+    var action = {
+      type: 'ADD_TODO',
+      text: 'I need to do this'
+    };
+    var res = actions.addTodo(action.text);
+    expect(res).toEqual(action);
+
+  });
+
 });
