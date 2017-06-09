@@ -18,7 +18,6 @@ describe('Actions', () => {
     };
     var res = actions.addTodo(action.text);
     expect(res).toEqual(action);
-
   });
 
 });

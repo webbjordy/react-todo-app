@@ -11,5 +11,13 @@ describe('Reducers', () => {
       var res = reducers.setSeatchText('', action);
       expect(res).toEqual(action.searchText);
     });
+
+    it('should toggle showCompleted status', () => {
+      var action = {
+        type: 'TOGGLE_SHOW_COMPLETED'
+      };
+      var res = reducers.showCompleted(false, action);
+      expect(res).toEqual(true)
+    });
   });
 });
