@@ -11,4 +11,6 @@ export var configure = () => {
 var store = redux.createStore(reducer, redux.compose(
     window.devToolsExtension ? window.devToolsExtension() : f => f
   ));
+
+  
 };
